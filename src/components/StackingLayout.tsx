@@ -137,16 +137,15 @@ export default function StackingLayout() {
         ref={s1Ref}
         className="sticky top-0 h-screen w-full overflow-hidden z-10"
       >
-        <div ref={s1BgRef} className="absolute inset-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src={SECTIONS.vision.videoUrl} type="video/mp4" />
-          </video>
+        <div ref={s1BgRef} className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 w-full h-full overflow-hidden">
+            <iframe
+              className="absolute top-1/2 left-1/2 w-[120vw] h-[120vh] min-w-[177.77vh] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+              src="https://www.youtube.com/embed/U99CXyGggxE?autoplay=1&mute=1&controls=0&loop=1&playlist=U99CXyGggxE&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&enablejsapi=1"
+              allow="autoplay; encrypted-media"
+              frameBorder="0"
+            />
+          </div>
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6">

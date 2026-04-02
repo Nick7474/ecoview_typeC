@@ -12,7 +12,7 @@ export const NAV_LINKS = [
 
 export const SECTIONS = {
   vision: {
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoUrl: "https://www.youtube.com/watch?v=U99CXyGggxE",
     title: "당신의 행동이 데이터가 되고,",
     subtitle: "데이터가 광명을 바꿉니다.",
     description: "광명시 스마트시티 에코뷰 비전 2030",
