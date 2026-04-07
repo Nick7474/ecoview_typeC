@@ -12,15 +12,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white text-gray-900 py-32 relative border-t border-gray-100">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+    <footer className="bg-white text-gray-900 py-[68px] relative border-t border-gray-100">
+      <div className="w-full px-6 md:px-[180px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="flex flex-col gap-8">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">E</span>
-              </div>
-              <span className="text-2xl font-black tracking-tighter text-blue-600">ECOVIEW</span>
+            <div className="flex items-center gap-2 mb-2">
+              <img src="/logo.png" alt="ECOVIEW" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-500 font-medium text-lg leading-relaxed">
               광명시의 지속 가능한 미래를 위한<br />시민 참여형 데이터 플랫폼입니다.
@@ -85,7 +82,7 @@ export default function Footer() {
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className="absolute -top-8 right-12 w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:-translate-y-2"
+        className="absolute bottom-[68px] right-12 w-16 h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:-translate-y-2 z-50"
       >
         <ArrowUp size={28} />
       </button>
